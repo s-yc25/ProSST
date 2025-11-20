@@ -1,18 +1,19 @@
 # ProSST
-Fixing problems encountered when using ProSST
+## Fixing problems encountered when using ProSST
 ## 1、ProSST 已知在 Python ≥3.8+ 和某些 Linux CUDA 环境下存在多进程问题
-修改了ProSST/prosst/structure/get_sst_seq.py，修改完的可用版本上传至仓库
+### 修改了ProSST/prosst/structure/get_sst_seq.py，修改完的可用版本上传至仓库
 ## 2、修改 score_mutants.ipynb
-在缺少形式如下的csv文件时仍然可以使用：
+### 在缺少形式如下的csv文件时仍然可以使用：
 zero_shot/example_data/GRB2_HUMAN_Faure_2021.csv
 mutant,mutated_sequence,DMS_score,DMS_score_bin
 T159M:D166V,MEAIAKYDFKATADDELSFKRGDILKVLNEECDQNWYKAELNGKDGFIPKNYIEMKPHPWFFGKIPRAKAEEMLSKQRHDGAFLIRESESAPGDFSLSVKFGNDVQHFKVLRDGAGKYFLWVVKFNSLNELVDYHRSTSVSRNQQIFLRDIEQVPQQPMYVQALFVFDPQEDGELGFRRGDFIHVMDNSDPNWWKGACHGQTGMFPRNYVTPVNRNV,-0.923699894000522,0
 T159F:G203C,MEAIAKYDFKATADDELSFKRGDILKVLNEECDQNWYKAELNGKDGFIPKNYIEMKPHPWFFGKIPRAKAEEMLSKQRHDGAFLIRESESAPGDFSLSVKFGNDVQHFKVLRDGAGKYFLWVVKFNSLNELVDYHRSTSVSRNQQIFLRDIEQVPQQPFYVQALFDFDPQEDGELGFRRGDFIHVMDNSDPNWWKGACHGQTCMFPRNYVTPVNRNV,-0.811371629054164,0
 T159F:G203A,MEAIAKYDFKATADDELSFKRGDILKVLNEECDQNWYKAELNGKDGFIPKNYIEMKPHPWFFGKIPRAKAEEMLSKQRHDGAFLIRESESAPGDFSLSVKFGNDVQHFKVLRDGAGKYFLWVVKFNSLNELVDYHRSTSVSRNQQIFLRDIEQVPQQPFYVQALFDFDPQEDGELGFRRGDFIHVMDNSDPNWWKGACHGQTAMFPRNYVTPVNRNV,-0.959640475494048,0
-修改后的python脚本 saturation_mutants_pred.py 上传仓库，用于单序列饱和突变的预测
-绘制突变得分分布直方图、每个残基位置的平均突变影响曲线图（plots.py）及热图（heatmap.py）的 python 脚本已上传至仓库
-选择 top-K 突变
+### 修改后的python脚本 saturation_mutants_pred.py 上传仓库，用于单序列饱和突变的预测
+### 绘制突变得分分布直方图、每个残基位置的平均突变影响曲线图（plots.py）及热图（heatmap.py）的 python 脚本已上传至仓库
+### 选择 top-K 突变
 ## 3、支持多点突变的版本
+### python 脚本 multi_mutants_pred.py 已上传仓库
 
 
 
