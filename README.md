@@ -3,7 +3,7 @@ Fixing problems encountered when using ProSST
 ## 1、ProSST 已知在 Python ≥3.8+ 和某些 Linux CUDA 环境下存在多进程问题
 修改了ProSST/prosst/structure/get_sst_seq.py，修改完的可用版本上传至仓库
 ## 2、修改 score_mutants.ipynb
-在形式如下的csv文件时仍然可以使用：
+在缺少形式如下的csv文件时仍然可以使用：
 zero_shot/example_data/GRB2_HUMAN_Faure_2021.csv
 mutant,mutated_sequence,DMS_score,DMS_score_bin
 T159M:D166V,MEAIAKYDFKATADDELSFKRGDILKVLNEECDQNWYKAELNGKDGFIPKNYIEMKPHPWFFGKIPRAKAEEMLSKQRHDGAFLIRESESAPGDFSLSVKFGNDVQHFKVLRDGAGKYFLWVVKFNSLNELVDYHRSTSVSRNQQIFLRDIEQVPQQPMYVQALFVFDPQEDGELGFRRGDFIHVMDNSDPNWWKGACHGQTGMFPRNYVTPVNRNV,-0.923699894000522,0
